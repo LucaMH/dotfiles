@@ -13,3 +13,4 @@ alias home="cd ~"
 alias c="clear"
 alias cls="clear"
 alias smbreloadconfig="smbcontrol smbd reload-config"
+
