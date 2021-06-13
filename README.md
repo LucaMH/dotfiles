@@ -1,7 +1,8 @@
 # dotfiles
 dotfiles i usually use
 
-# bash_aliases
+bash_aliases
+------
 to use this add:
 ```bash
 if [ -f ~/.bash_aliases ]; then
