@@ -1,4 +1,4 @@
-#My custom aliases
+#ALIASES
 alias ll="ls -arlFh --color=auto"
 alias l="ls -arlFh --color=auto"
 alias follow"=tail -f -n 40"
