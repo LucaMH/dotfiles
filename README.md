@@ -6,5 +6,6 @@ to use this add:
 ```bash
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
-fi```
+fi
+```
 to your bash rc
