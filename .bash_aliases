@@ -18,9 +18,9 @@ alias smbreloadconfig="smbcontrol smbd reload-config"
 #mkcd
 function mkcd {
     if [ ! -n "$1" ]; then
-        echo "Enter a directory name"
+        echo "You need to enter the name of the directory you want to create! (no blanks supported....)"
     elif [ -d $1 ]; then
-        echo "\`$1' already exists"
+        echo "\`$1' already exists..."
     else
         mkdir $1 && cd $1
     fi
