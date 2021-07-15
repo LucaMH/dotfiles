@@ -12,6 +12,7 @@ alias du="du -ch"
 alias home="cd ~"
 alias c="clear"
 alias cls="clear"
+alias ps ="ps -afxu"
 alias smbreloadconfig="smbcontrol smbd reload-config"
 
 #FUNCTIONS
