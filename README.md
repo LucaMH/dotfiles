@@ -9,4 +9,4 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 ```
-to your bash rc
+to your bash_rc
