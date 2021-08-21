@@ -2,11 +2,11 @@
 dotfiles i usually use
 
 
-## bash_aliases
+## mybash
 to use this, add the following to your bash_rc
 ```bash
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+if [ -f ~/.mybash ]; then
+    . ~/.mybash
 fi
 ```
 
