@@ -20,10 +20,10 @@ alias foldersize="du -h --max-depth=1"
 #EDITOR
 if [ -x "$(command -v vi)" ]; then
     export VISUAL=vi
-    export EDITOR="$VISUAL"
+    export EDITOR=vi
 elif [ -x "$(command -v vim)" ]; then
     export VISUAL=vim
-    export EDITOR="$VISUAL"
+    export EDITOR=vim
 fi
 
 
