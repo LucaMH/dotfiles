@@ -17,6 +17,10 @@ alias ps="ps -afxu"
 alias smbreloadconfig="smbcontrol smbd reload-config"
 alias foldersize="du -h --max-depth=1"
 
+#EDITOR
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 #FUNCTIONS
 #mkcd
 function mkcd {
