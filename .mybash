@@ -18,8 +18,14 @@ alias smbreloadconfig="smbcontrol smbd reload-config"
 alias foldersize="du -h --max-depth=1"
 
 #EDITOR
-export VISUAL=vim
-export EDITOR="$VISUAL"
+if [ -x "$(command -v vi)" ]; then
+    export VISUAL=vi
+    export EDITOR="$VISUAL"
+elif [ -x "$(command -v vim)" ]; then
+    export VISUAL=vim
+    export EDITOR="$VISUAL"
+fi
+
 
 #FUNCTIONS
 #mkcd
