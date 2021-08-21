@@ -1,6 +1,6 @@
 #ALIASES
-alias ll="ls -arlFh --color=auto"
-alias l="ls -arlFh --color=auto"
+alias ll="ls -arlFh --color=force --time-style long-iso"
+alias l="ls -arlFh --color=force --time-style long-iso"
 alias follow"=tail -f -n 40"
 alias f="tail -f -n 40"
 alias dog="cat"
