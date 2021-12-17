@@ -1,5 +1,4 @@
-#LANGUAGE
-# english pls, thx
+#english localisation
 export LC_ALL=C
 
 #ALIASES
@@ -30,7 +29,6 @@ elif [ -x "$(command -v vim)" ]; then
     export EDITOR=vim
 fi
 
-
 #FUNCTIONS
 #mkcd
 function mkcd {
@@ -46,6 +44,8 @@ function mkcd {
 #MAKE PRIMARY PROMT STRING BEAUTIFUL
 export PS1="\[\033[38;5;2m\]\u\[$(tput sgr0)\]@\[$(tput sgr0)\]\[\033[38;5;214m\]\h\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;121m\]\t\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;226m\]\w\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;51m\]\\$\[$(tput sgr0)\] \[$(tput sgr0)\]"
 
+#DATE AND TIME TOO HISTORY
+export HISTTIMEFORMAT="%F %T "
 
 #SECOND ALIAS FILE (for nonpublic stuff)
 if [ -f ~/.mybash2 ]; then
