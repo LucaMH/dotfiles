@@ -2,7 +2,8 @@ set nocompatible              "   make arrowkeys and other meys work (keymap on 
 set number                    "   show line numbers
 "set list                     "   display whitespaces and eol
 set autoindent                "   autoindentation in scripts
-map S :wq                     "   alias to save changes and quit with STRG S
+:nmap <c-s> :w<CR>            "   alias to save changes with STRG/CTRL S
+:imap <c-s> <Esc>:w<CR>a      "   alias to save changes with STRG/CTRL S when in edit mode
 set ignorecase                "   ignore case in search
 set showmode                  "   show mode you are currently in
 set hlsearch                  "   highlight search terms
