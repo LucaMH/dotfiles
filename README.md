@@ -3,7 +3,7 @@ dotfiles i usually use
 
 
 ## mybash
-to use this, add the following to your bash_rc
+to use this, add the following to your bashrc
 ```bash
 if [ -f ~/.mybash ]; then
     . ~/.mybash
