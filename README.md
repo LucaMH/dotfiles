@@ -10,5 +10,5 @@ if [ -f ~/.mybash ]; then
 fi
 ```
 
-## vimrc
+## vimrc & tmux.conf 
 just throw the file to your home directory
