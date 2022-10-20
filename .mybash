@@ -2,8 +2,8 @@
 export LC_ALL="C.UTF-8"
 
 #ALIASES
-alias ll="ls -arlFh --color=force --time-style=long-iso"
-alias l="ls -arlFh --color=force --time-style=long-iso"
+alias ll="ls -latFh --color=force --time-style=long-iso"
+alias l="ls -latFh --color=force --time-style=long-iso"
 alias follow"=tail -f -n 40"
 alias f="tail -f -n 40"
 alias dog="cat"
