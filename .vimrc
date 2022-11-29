@@ -16,4 +16,4 @@ set noerrorbells              "   disable beep
 :imap <c-w> <Esc>:w<CR>       "   alias to save changes with STRG/CTRL W when in edit mode
 
 "commands
-command SUDOW :execute ':silent w !sudo tee % > /dev/null' | :edit!
+"command SUDOW :execute ':silent w !sudo tee % > /dev/null' | :edit!
