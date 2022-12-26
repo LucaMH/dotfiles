@@ -18,7 +18,7 @@ alias cls="clear"
 alias ps="ps -afxu"
 alias foldersize="du -h --max-depth=1"
 alias diff="diff --color"
-alias nocomment='grep -Ev '''^(#|$)''''
+alias nocomment="grep -Ev '''^(#|$)'''"
 
 #EDITOR
 if [ -x "$(command -v vi)" ]; then
