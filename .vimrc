@@ -15,5 +15,8 @@ set noerrorbells              "   disable beep
 :nmap <c-w> :w<CR>            "   alias to save changes with STRG/CTRL W
 :imap <c-w> <Esc>:w<CR>       "   alias to save changes with STRG/CTRL W when in edit mode
 
+"make it beautiful
+:highlight Comment ctermfg=darkgray    " comments in darkgray because darkblue on black hurts my eyes
+
 "commands
 "command SUDOW :execute ':silent w !sudo tee % > /dev/null' | :edit!
