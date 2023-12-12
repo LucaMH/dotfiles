@@ -1,5 +1,6 @@
 set nocompatible              "   make arrowkeys and other meys work (keymap on the german raspbian seems broken)
 set number                    "   show line numbers
+set relativenumber            "   show lines above and below relative to the current line
 "set list                     "   display whitespaces and eol
 set autoindent                "   autoindentation in scripts
 set ignorecase                "   ignore case in search
