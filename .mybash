@@ -44,6 +44,8 @@ function mkcd {
 
 #MAKE PRIMARY PROMT STRING BEAUTIFUL
 export PS1="\[\033[38;5;2m\]\u\[$(tput sgr0)\]@\[$(tput sgr0)\]\[\033[38;5;214m\]\h\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;121m\]\t\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;226m\]\w\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;51m\]\\$\[$(tput sgr0)\] \[$(tput sgr0)\]"
+#uncomment below for black background
+# echo -ne '\e]11;#000000\e\\'
 
 #DATE AND TIME TOO HISTORY
 export HISTTIMEFORMAT="%F %T "
