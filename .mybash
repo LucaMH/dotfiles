@@ -20,6 +20,7 @@ alias foldersize="du -h --max-depth=1"
 alias diff="diff --color"
 alias nocomment="grep -Ev '''^(#|$)'''"
 alias octal="stat -c '%A %a %n'"
+alias sdig="dig +noall +answer"
 
 #EDITOR
 if [ -x "$(command -v vi)" ]; then
