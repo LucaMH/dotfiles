@@ -63,7 +63,7 @@ function newsshkey {
 }
 
 #foldersize
-foldersize() {
+function foldersize() {
   local level=1
   if [[ "$1" == --level=* ]]; then
     level="${1#--level=}"
