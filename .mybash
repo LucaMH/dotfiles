@@ -16,7 +16,6 @@ alias home="cd ~"
 alias c="clear"
 alias cls="clear"
 alias ps="ps -afxu"
-alias foldersize="du -ch"
 alias diff="diff --color"
 alias nocomment="grep -Ev '''^(#|$)'''"
 alias octal="stat -c '%A %a %n'"
@@ -42,6 +41,7 @@ function mkcd {
         mkdir $1 && cd $1
     fi
 }
+
 #newsshkey
 function newsshkey {
     if [ ! -n "$1" ]; then
@@ -55,7 +55,15 @@ function newsshkey {
         echo ""
     fi
 }
- 
+
+#foldersize
+foldersize() {
+  local level=1
+  if [[ "$1" == --level=* ]]; then
+    level="${1#--level=}"
+  fi
+  du -ch --max-depth="$level"
+}
 
 #MAKE PRIMARY PROMT STRING BEAUTIFUL
 export PS1="\[\033[38;5;2m\]\u\[$(tput sgr0)\]@\[$(tput sgr0)\]\[\033[38;5;214m\]\h\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;121m\]\t\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;226m\]\w\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;51m\]\\$\[$(tput sgr0)\] \[$(tput sgr0)\]"
