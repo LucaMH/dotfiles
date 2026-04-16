@@ -1,6 +1,8 @@
 #english localisation
 export LC_ALL="C.UTF-8"
 
+
+
 #ALIASES
 alias ll="ls -latFhp --color=force --time-style=long-iso"
 alias l="ls -latFhp --color=force --time-style=long-iso"
@@ -21,6 +23,8 @@ alias nocomment="grep -Ev '''^(#|$)'''"
 alias octal="stat -c '%A %a %n'"
 alias sdig="dig +noall +answer"
 
+
+
 #EDITOR
 if [ -x "$(command -v vi)" ]; then
     export VISUAL=vi
@@ -29,6 +33,8 @@ elif [ -x "$(command -v vim)" ]; then
     export VISUAL=vim
     export EDITOR=vim
 fi
+
+
 
 #FUNCTIONS
 #mkcd
@@ -65,17 +71,27 @@ foldersize() {
   du -ch --max-depth="$level"
 }
 
+#grep without comments
+ncgrep() {
+  grep -Ev '^[[:space:]]*($|#|;)' "$@"
+}
+
+
+
 #MAKE PRIMARY PROMT STRING BEAUTIFUL
 export PS1="\[\033[38;5;2m\]\u\[$(tput sgr0)\]@\[$(tput sgr0)\]\[\033[38;5;214m\]\h\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;121m\]\t\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;226m\]\w\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;51m\]\\$\[$(tput sgr0)\] \[$(tput sgr0)\]"
 #uncomment below for black background
 # echo -ne '\e]11;#000000\e\\'
 
+
+
 #DATE AND TIME TOO HISTORY
 export HISTTIMEFORMAT="%F %T "
+
+
 
 #SECOND ALIAS FILE (for nonpublic stuff)
 if [ -f ~/.mybash2 ]; then
     . ~/.mybash2
 fi
 #END
-
