@@ -63,12 +63,15 @@ function newsshkey {
 }
 
 #foldersize
-function foldersize() {
-  local level=1
-  if [[ "$1" == --level=* ]]; then
-    level="${1#--level=}"
-  fi
-  du -ch --max-depth="$level"
+function foldersize {
+    if [[ "$1" =~ ^[0-9]$ ]]; then
+        level="${1:-1}"
+        path="${2:-.}"
+    else
+        level="1"
+        path="${1:-.}"
+    fi
+    echo "du -ch --max-depth="$level" "$path""
 }
 
 #grep without comments
