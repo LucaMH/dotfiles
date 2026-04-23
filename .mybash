@@ -71,7 +71,7 @@ function foldersize {
         level="1"
         path="${1:-.}"
     fi
-    echo "du -ch --max-depth="$level" "$path""
+    du -ch --max-depth="$level" "$path"
 }
 
 #grep without comments
