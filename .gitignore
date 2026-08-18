@@ -1,0 +1,10 @@
+# exclude everything
+*
+
+# include single files
+# why? to be able to "git manage" the config/dot files in the homedirectory
+!.mybash
+!.tmux.conf
+!.vimrc
+!LICENSE
+!README
